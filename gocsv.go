@@ -19,7 +19,7 @@ func main() {
 		}
 	   fmt.Println(record)
 	   fmt.Println(len(record))
-		for vlaue := range record {
+		for value := range record {
 			fmt.Printf(" %v\n", record[value])
 		}
 	}
