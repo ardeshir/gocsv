@@ -11,7 +11,7 @@ import (
 func main() {
 	f, _ := os.Open("violations.csv")
 
-	csvr = csv.NewReader(budio.NewReader(f))
+	csvr := csv.NewReader(bufio.NewReader(f))
 	for {
 	   record, err := csvr.Read()
 		if err == io.EOF {
