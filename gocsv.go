@@ -18,7 +18,7 @@ func main() {
 			break
 		}
 	   fmt.Println(record)
-	   fmt.Println(len(recoord))
+	   fmt.Println(len(record))
 		for vlaue := range record {
 		   fmt.Printf(" %v\n", record[value])
 		}
