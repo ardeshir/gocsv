@@ -1,11 +1,11 @@
 package main
 
 import (
-	"bufio"	
+	"bufio"
 	"encoding/csv"
-	"os"
 	"fmt"
 	"io"
+	"os"
 )
 
 func main() {
@@ -13,15 +13,14 @@ func main() {
 
 	csvr := csv.NewReader(bufio.NewReader(f))
 	for {
-	   record, err := csvr.Read()
+		record, err := csvr.Read()
 		if err == io.EOF {
 			break
 		}
 	   fmt.Println(record)
 	   fmt.Println(len(record))
 		for vlaue := range record {
-		   fmt.Printf(" %v\n", record[value])
+			fmt.Printf(" %v\n", record[value])
 		}
-	  }
+	}
 }
-
